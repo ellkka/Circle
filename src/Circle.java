@@ -2,12 +2,12 @@ public class Circle {
 
     private double radius;
 
-    public double getArea(double radius){
+    static double getArea(double radius){
         return(Math.PI*radius*radius);
     }
 
-    public double getPerimeter(double radius){
-        return(radius*radius);
+    static double getPerimeter(double radius){
+        return(2*Math.PI*radius);
     }
 
 }
