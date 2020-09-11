@@ -13,12 +13,12 @@ public class Application {
        System.out.println("Area is: " + getArea(circ.getRadius()));
 
     }
-    static double getArea(double radius){
-        return(Math.PI*radius*radius);
+    static double getArea(double r){
+        return(Math.PI*r*r);
     }
 
-    static double getPerimeter(double radius){
-        return(2*Math.PI*radius);
+    static double getPerimeter(double r){
+        return(2*Math.PI*r);
     }
 
 }
