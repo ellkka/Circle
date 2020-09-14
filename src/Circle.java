@@ -2,11 +2,19 @@ public class Circle {
 
     private double radius;
 
-    static double getArea(double radius) {
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    protected static double getArea(double radius) {
         return(Math.PI*radius*radius);
     }
 
-    static double getPerimeter(double radius) {
+    protected double getPerimeter(double radius) {
        return(2*Math.PI*radius);
     }
 }

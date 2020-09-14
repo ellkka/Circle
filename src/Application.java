@@ -1,9 +1,15 @@
-public class Application {
-    public Application() {
-    }
+import java.lang.reflect.Method;
+
+public class Application extends Circle {
 
     public static void main(String[] args) {
-        System.out.println("Perimeter is: " + Circle.getPerimeter(4.0D));
-        System.out.println("Area is: " + Circle.getArea(4.0D));
+
+        Application circ1 = new Application();
+
+        double p = circ1.getPerimeter(4);
+        double a = circ1.getArea(4);
+
+        System.out.println("Perimeter is: " + p);
+        System.out.println("Area is: " + a);
     }
 }
